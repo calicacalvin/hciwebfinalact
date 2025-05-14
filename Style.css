@@ -1,0 +1,30 @@
+ body {
+    padding-top: 56px;
+    min-height: 100vh;
+    background-color: silver;
+
+  }
+  .page {
+    display: none;
+  }
+  .page.active {
+    display: block;
+  }
+  .product-card {
+    margin-bottom: 1.5rem;
+  }
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem 0;
+  }
+  @media (max-width: 600px) {
+    .cart-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .cart-item > div {
+      margin-bottom: 0.5rem;
+    }
